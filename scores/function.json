@@ -1,0 +1,33 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "route": "scores",
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "currentLeaderboardBlobInput",
+      "type": "blob",
+      "path": "leaderboard/current",
+      "direction": "in"
+    },
+    {
+      "name": "currentLeaderboardBlobOutput",
+      "type": "blob",
+      "path": "leaderboard/current",
+      "direction": "out"
+    }
+  ]
+}
