@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/typescript/bin/tsc",
+    "build": "tsc",
     "watch": "tsc -w",
     "run": "func host start",
     "postinstall": "npm run build"
