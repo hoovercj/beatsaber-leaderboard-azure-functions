@@ -10,10 +10,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "node_modules/typescript/bin/tsc",
     "watch": "tsc -w",
     "run": "func host start",
-    "postinstall": "npm install -g typescript && npm run build"
+    "postinstall": "npm run build"
   },
   "license": "MIT",
   "dependencies": {
