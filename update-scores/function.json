@@ -2,13 +2,13 @@
   "disabled": false,
   "bindings": [
     {
-      "route": "scores",
-      "authLevel": "anonymous",
+      "route": "updatescores",
+      "authLevel": "function",
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
       "methods": [
-        "get"
+        "post"
       ]
     },
     {
@@ -17,10 +17,10 @@
       "name": "res"
     },
     {
-      "name": "currentLeaderboardBlobInput",
+      "name": "currentLeaderboardBlobOutput",
       "type": "blob",
       "path": "leaderboard/current",
-      "direction": "in"
+      "direction": "out"
     }
   ]
 }
