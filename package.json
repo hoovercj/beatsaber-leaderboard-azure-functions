@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "watch": "tsc -w",
-    "run": "func host start"
+    "run": "func host start",
+    "postinstall": "npm run build"
   },
   "license": "MIT",
   "dependencies": {
