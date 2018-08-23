@@ -1,0 +1,26 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "route": "updatescoresforid/{id}",
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "currentLeaderboardBlobOutput",
+      "type": "blob",
+      "path": "leaderboard/{id}/current",
+      "direction": "out"
+    }
+  ]
+}
